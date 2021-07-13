@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div id="survey">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">!! Thank Your For Taking Part In This Survey !!</p>
+        <form action="" id="survey-form">
+            <div class="hey">
+                <label id="name-label" for="name">Name:</label>
+                <br>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Full Name" required>
+            </div>
+            <div class="hey1">
+                <label id="email-label" for="Email">Email:</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email Id" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number"
+                  >Age</label>
+                <input
+                  type="number"
+                  name="age"
+                  id="number"
+                  min="10"
+                  max="99"
+                  class="form-control"
+                  placeholder="Age"
+                />
+              </div>
+            <div class="hey2">
+                <p>Which Option Best Describes Your Current Role?</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disable selected value>Select one option</option>
+                    <option value="student">Student</option>
+                    <option value="full">Full-Time Job</option>
+                    <option value="part">Part-Time Job</option>
+                    <option value="free">FreeLancer</option>
+                    <option value="no">Prefer Not To Say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you share this survey with others?</p>
+                <label>
+                  <input
+                    name="user-recommend"
+                    value="definitely"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                  />Definitely</label
+                >
+                <label>
+                  <input
+                    name="user-recommend"
+                    value="maybe"
+                    type="radio"
+                    class="input-radio"
+                  />Maybe</label
+                >
+          
+                <label
+                  ><input
+                    name="user-recommend"
+                    value="not-sure"
+                    type="radio"
+                    class="input-radio"
+                  />Not sure</label
+                >
+            </div>
+            <div class="form-group">
+                <p>Sports U Like...</p>
+                <label><input type="checkbox" class="checkbox" name="prefer" value="50k"/>Baseball</label>
+                <label><input type="checkbox" class="checkbox" name="prefer" value="100k"/>Cricket/label>
+                <label><input type="checkbox" class="checkbox" name="prefer" value="150k"/>Hockey</label>
+                <label><input type="checkbox" class="checkbox" name="prefer" value="200k"/>Football</label>
+                <label><input type="checkbox" class="checkbox" name="prefer" value="250k"/>Polo</label>
+                <label><input type="checkbox" class="checkbox" name="prefer" value="other"/>Other</label>
+            </div>
+            <div class="hey">
+                <p>Any Suggestion?</p>
+                <textarea name="comments" id="comments" placeholder="Suggestions here...." cols="50" rows="10" ></textarea>
+            </div>
+            <div class="submit">
+                <button type="submit" id="submit" class="submit-button">
+                  Submit
+                </button>
+                </div>
+        </form>
+    </div>    
+</body>
+</html>
